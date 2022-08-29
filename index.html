@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>music player</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <i class='bx bxs-chevron-down'></i>
+            <p>playlist</p>
+            <i class='bx bx-dots-horizontal-rounded'></i>
+        </header>
+        <img src="m1.jpg">
+        <section class="title-section">
+            <h3 class="title">Çok Üzgünsün Arkadaş</h3>
+            <p class="subtitle"> Ebru Gündeş</p>
+        </section>
+        <section class="options">
+            <div class="progress"><span class="bar"></span></div>
+            <div class="time">
+                <span id="track-current-time">00:00</span>
+                <span id="track-duration">04:03</span>
+            </div>
+            <div class="btns">
+                <i class='bx bx-repeat'></i>
+                <i class='bx bx-skip-previous-circle' ></i>
+                <i class='bx bx-play-circle' id="play"></i>
+                <i class='bx bx-skip-next-circle' ></i>
+                <i class='bx bxs-playlist' id="playlist-btn"></i>
+            </div>
+        </section>
+        <section class="play-list">
+            playList will show here
+        </section>
+    </div>
+</body>
+
+</html>

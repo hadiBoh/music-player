@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#e66465, #9198e5);
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 300px;
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.2) 0 0.5rem 0.75rem,
+                 rgba(0,0,0,0.2) 0 0.25rem 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1.25rem 0.5rem;
+    position: relative;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+.header i {
+    cursor: pointer;
+}
+img{
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+}
+.title-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.options{
+    height: 80px;
+    width: 100%;
+    padding: 0 0.5rem;
+}
+.progress{
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: lightgray;
+    position: relative;
+    transition: opacity 200ms ease-in-out;
+    cursor: pointer;
+}
+.bar{
+    height: inherit;
+    position: absolute;
+    left: 0;
+    background: lightcoral;
+    width: 0%;
+    opacity: 0.7;
+    transition: opacity 200ms ease-in-out;
+}
+.progress:hover .bar{
+    opacity: 1;
+}
+.bar::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: lightcoral;
+    transform: translateY(30%);
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+}
+.time{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+.btns{
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e66465;
+    cursor: pointer;
+}
+.btns i{
+    opacity: 0.7;
+    transition: opacity 200ms ease-in-out;
+}
+.btns i:hover{
+    opacity: 1;
+}
+#play{
+    font-size: 2.5rem;
+}
+.play-list{
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    width: 100%;
+    background: rgb(247, 247, 247);
+    transform: translateY(100%);
+    transition: transform 350ms ease-in-out;
+    box-shadow: rgba(0,0,0,0.2) 0 0.5rem 0.75rem,
+    rgba(0,0,0,0.2) 0 0.25rem 0.5rem;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e66465;
+    font-size: 1.5rem;
+}
+.play-list.active{
+    transform: translateY(0%);
+}
