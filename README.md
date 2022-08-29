@@ -1,1 +1,1 @@
-#music player looking at finale project of codingNepal youtube ,using my code
+#music player looking at finale project of codingNepal youtube channel and using my code
